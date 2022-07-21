@@ -1,0 +1,274 @@
+html,
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* nav bar */
+
+.tab {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  margin-top: -4.3%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-right: 7%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tab li {
+  display: inline;
+  float: right;
+  margin-left: 2%;
+}
+
+.home {
+  position: relative;
+  left: -720%;
+}
+
+.tab li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab-items:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1.5px black;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 100% 50%;
+}
+
+.tab-items:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*  */
+
+.middle-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* page 1 */
+
+#landing-page {
+  height: 100vh;
+}
+
+#landing-page h1 {
+  padding-top: 8%;
+  margin-bottom: 0;
+}
+
+@keyframes button-animation {
+  0% {
+    background-color: white;
+  }
+  0.3% {
+    background-color: blue;
+    color: white;
+  }
+}
+
+.about-button {
+  font-size: 1em;
+  font-weight: 600;
+  color: blue;
+  background-color: white;
+  border-color: blue;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  margin-top: 2.5%;
+}
+
+.about-button:hover {
+  animation-name: button-animation;
+  animation-duration: 100s;
+  cursor: pointer;
+}
+
+/* page 2 */
+
+#about-me {
+  height: 100vh;
+}
+
+.section-header {
+  margin: 0;
+  padding-top: 9%;
+  padding-bottom: 2.5%;
+}
+.profile-img {
+  float: right;
+  width: 25%;
+  background-color: #ffd24c;
+  border-radius: 100%;
+  margin-top: -1%;
+}
+
+.mmu {
+  color: blue;
+  cursor: pointer;
+}
+
+.mmu:hover {
+  color: rgb(31, 31, 190);
+}
+
+/* page 3 */
+
+#education {
+  height: 100vh;
+  padding-top: 15%;
+}
+
+.education-title {
+  float: left;
+  border-right: 3px solid black;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 3%;
+  margin-top: -2.5%;
+}
+
+.tables {
+  float: right;
+}
+
+.course {
+  text-align: left;
+  width: 30em;
+}
+
+.view-courses {
+  cursor: pointer;
+  color: blue;
+}
+
+.view-courses:hover {
+  color: rgb(31, 31, 190);
+}
+
+.course-items {
+  color: blue;
+  cursor: pointer;
+}
+
+.course-items:hover {
+  color: rgb(31, 31, 190);
+}
+
+.course-items:after {
+  display: block;
+  content: "";
+}
+
+.course-items:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
+
+.dropdown-courses {
+  display: none;
+  position: absolute;
+  margin-left: -2em;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.dropdown-courses td {
+  font-size: 15px;
+  padding: 20px;
+}
+
+.dropdown2:hover .dropdown-courses {
+  display: block;
+}
+
+/* page 4 */
+
+#work-experience {
+  height: 100vh;
+}
+
+#personal-projects {
+  height: 100vh;
+}
+
+#skills {
+  height: 100vh;
+}
+
+#achievements {
+  height: 100vh;
+}
+
+#volunteer-experience {
+  height: 100vh;
+}
+
+#languages {
+  height: 100vh;
+}
+
+#interests {
+  height: 100vh;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 550;
+}
+
+h2 {
+  font-weight: 400;
+}

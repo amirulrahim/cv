@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amirul Rahim</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <!-- raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <script type="text/javascript" src="jquery-3.6.0.min.js"> </script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="top-container">
+      <nav class="tab">
+        <ul>  
+          <li>
+            <a class="tab-items">Get in Touch</a>
+          </li>
+          <li>
+            <a class="tab-items">Resume</a>
+          </li>
+          <li class="dropdown">
+            <a class="tab-items">Explore</a>
+            <div class="dropdown-content">
+              <a onclick="scroll_to_div('about-me')">About</a>
+              <a onclick="scroll_to_div('work-experience')">Work Experience</a>
+              <a onclick="scroll_to_div('education')">Education</a>
+              <a onclick="scroll_to_div('personal-projects')">Personal Projects</a>
+              <a onclick="scroll_to_div('skills')">Skills</a>
+              <a onclick="scroll_to_div('achievements')">Achievements</a>
+              <a onclick="scroll_to_div('volunteer-experience')">Volunteer Experience</a>
+              <a onclick="scroll_to_div('languages')">Languages</a>
+              <a onclick="scroll_to_div('interests')">Interests</a>
+            </div>
+          </li>
+          <li>
+            <a  onclick="scroll_to_div('landing-page')" class="home">Amirul Rahim</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="middle-container">
+      <div id="landing-page">
+        <h1>Amirul is a Software Engineering student 👨‍💻</h1>
+        <h2><i> Currently available for employment.</i></h2>
+        <input type="button" onclick="scroll_to_div('about-me')" class="about-button" value="Learn more">
+      </div>
+
+      <div id="about-me">
+        <h1 class="section-header">About him</h1>
+        <img class="profile-img" src="images/profile.png" alt="profile-img" />
+        <h2>
+          Amirul is a driven and goal-oriented Software Engineering student who
+          is <span class="sentence">not afraid to step out of his comfort zone</span> for the pursuit of new
+          knowledge and skill sets. A final year student at <span class="mmu" onclick="scroll_to_div('education')">Multimedia
+          University</span>, Cyberjaya, he is currently interning at Deloitte Malaysia.
+        </h2>
+        <h2><br>
+          If you are looking for a diligent and perseverant individual to join
+          your organisation, then you have come to the right place.
+        </h2>
+      </div>
+
+      <div id="work-experience"><h1 class="section-header">Work Experience</h></div>
+
+      <div id="education">
+        <h1 class="education-title">Education</h1>
+        <div class="tables">
+          <table class="computer-science">
+            <tr>
+              <th class="course">
+                Bachelor of Computer Science (Hons.) (Software Engineering)
+              </th> 
+            </tr>
+
+            <tr>
+              <td>Multimedia University, Cyberjaya</td>
+            </tr>
+
+            <tr>
+              <td>04/2020 - Present</td>
+              <td>3.39 CGPA</td>
+            </tr>            
+          </table>
+          <ul>
+            <li class="dropdown2">
+              <a class="course-items">View Courses ></a>
+              <div class="dropdown-courses">
+                <table>
+                  <tr>
+                    <td>
+                      • Software Engineering Fundamentals <br>
+                      • Operating Systems <br>
+                      • Object Oriented Analysis and Design <br>
+                      • Theory of Computation <br>
+                      • Computational Methods <br>
+                      • Computer Architecture and Organisation <br>
+                      • Computer Networks <br>
+                      • Research Methodology in Computer Science</td>
+                    <td>
+                      • Algorithm Design and Analysis <br>
+                      • Software Reliability and Quality Assurance <br>
+                      • Software Design <br>
+                      • Software Evolution and Maintenance <br>
+                      • Game Physics <br>
+                      • Software Requirements Engineering <br>
+                      • Software Verification and Validation <br>
+                      • Computer Security <br>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+          </ul>
+
+          <br />
+
+          <table class="information-technology">
+            <tr>
+              <th class="course">Diploma in Information Technology</th>
+            </tr>
+
+            <tr>
+              <td>Multimedia University, Cyberjaya</td>
+            </tr>
+
+            <tr>
+              <td>11/2017 - 02/2020</td>
+              <td>3.63 CGPA</td>
+            </tr>
+
+            <tr>
+              <td class="view-courses">View Courses ></td>
+              <!-- add courses -->
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="personal-projects"><h1 class="section-header">Personal Projects</h1></div>
+
+      <div id="skills"><h1 class="section-header">Skills</h1></div>
+
+      <div id="achievements"><h1 class="section-header">Achievements</h1></div>
+
+      <div id="volunteer-experience"><h1 class="section-header">Volunteer Experience</h1></div>
+
+      <div id="languages"><h1 class="section-header">Languages</h1></div>
+
+      <div id="interests"><h1 class="section-header">Interests</h1></div>
+    </div>
+
+    <div class="bottom-container"></div>
+
+    <h2>Get in Touch</h2>
+    <form action="" method="post" enctype="text/plain">
+      <label for="">Title:</label><br />
+      <input type="text" placeholder="Title" name="" id="" /><br />
+      <label for="">Email:</label><br />
+      <input type="email" placeholder="Email" name="" id="" /><br />
+      <label for="">Name:</label><br />
+      <input type="text" placeholder="Name" name="" id="" /><br />
+      <label for="">Message</label><br />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Message"
+      ></textarea
+      ><br />
+      <input type="submit" />
+    </form>
+    <!-- + ph no + location + linkedin -->
+
+   
+  </body>
+</html>
